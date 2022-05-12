@@ -11,7 +11,7 @@ pipeline {
         }
         stage('docker build'){
             steps{
-                sh 'docker build -t manikumar99/m3:$BUILD_NUMBER '
+                sh 'docker build -t manikumar99/me1:1.5 .'
             }
         }
         stage('docker-login'){
@@ -21,12 +21,12 @@ pipeline {
             }
             stage('docker push'){
                 steps{
-                    sh 'docker push manikumar99/m3:$BUILD_NUMBER'
+                    sh 'docker push manikumar99/me1:1.5'
                 }
             }
             stage('container creation'){
             steps{
-            sh 'docker run -itd --name kumar -p 8080:8080 me'
+            sh 'docker run -itd --name kumar -p 8080:8080 me1:1.5'
             }
             }
     }
