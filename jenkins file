@@ -6,7 +6,7 @@ maven 'maven-3.8.5'
 stages{
 stage('gitclone'){
 steps{
-git 'https://github.com/manikumar9999/mkr.git'
+git 'https://github.com/manikumar9999/lopk.git'
 }
 }
 stage('mvn'){
