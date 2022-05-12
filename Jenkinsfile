@@ -15,4 +15,4 @@ sh 'mvn clean install package'
 }
 }
 }
-]
+}
