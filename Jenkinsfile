@@ -11,7 +11,7 @@ pipeline {
         }
         stage('docker build'){
             steps{
-                sh 'docker build -t manikumar99/me1:1.5 .'
+                sh 'docker build . -t manikumar99/me1:1.5 '
             }
         }
         stage('docker-login'){
