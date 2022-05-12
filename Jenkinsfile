@@ -11,7 +11,7 @@ pipeline {
         }
         stage('docker build'){
             steps{
-                sh 'docker build -t manikumar99/m3:$BUILD_NUMBER .'
+                sh 'docker build -t manikumar99/m3:$BUILD_NUMBER '
             }
         }
         stage('docker-login'){
