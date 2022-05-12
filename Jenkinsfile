@@ -2,6 +2,7 @@ pipeline {
     agent any
     environment{
         DOCKERHUB_CREDENTIALS=credentials('mani-docker')
+        DOCKER_TAG=getVersion()
     }
     stages{
         stage('git clone'){
@@ -11,7 +12,7 @@ pipeline {
         }
         stage('docker build'){
             steps{
-                sh 'docker build . -t manikumar99/me1:1.5 '
+                 sh "docker build . -t manikumar99/maniapp:${DOCKER_TAG} "
             }
         }
         stage('docker-login'){
