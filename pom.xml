@@ -52,11 +52,7 @@
           <target>1.7</target>
         </configuration>
       </plugin>
-     <configuration>
-  <source>1.7</source>
-  <target>1.7</target>
-  <failOnMissingWebXml>false</failOnMissingWebXml>
- </configuration>
+     
     </plugins>
   </build>
   
